@@ -10,30 +10,30 @@ Please download the Timezone Updater Tool from the [Oracle Technology Network] (
 **tzdownloader.sh** - Time Zone Database Archive Downloader. Downloads the time zone database archive into the "tzdata" directory and prepares it to update
 
 ### Version Checker (tzversion.sh)
-**Usage:**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`./tzversion.sh <dir>`
+**Usage:**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`./tzversion.sh <dir>`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<dir\>** - indicates a directory as a search path for Java instances.
 
-**Examples:**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`./tzversion.sh /u01` – searches for Java under the base directory for Oracle Database and Grid homes
+**Examples:**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`./tzversion.sh /u01` – searches for Java under the base directory for Oracle Database and Grid homes  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`./tzversion.sh /usr` – searches for openjdk
 
 ### Time Zone Updater (tzupdater.sh)
-**Usage:**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`./tzupdater.sh <dir> <p2> -f(optional)`
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<dir\>** - indicates a directory as a search path for Java instances
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<p2\>** - can be an http/https link to the time zone database archive or a filename of recently downloaded and prepared time zone database archive in "tzdata" directory.
+**Usage:**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`./tzupdater.sh <dir> <p2> -f(optional)`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<dir\>** - indicates a directory as a search path for Java instances  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<p2\>** - can be an http/https link to the time zone database archive or a filename of recently downloaded and prepared time zone database archive in "tzdata" directory.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**-f** - Is optional and stands for **force** update, in case of downgrading time zone database version
 
-**Examples:**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`./tzupdater.sh /u01 http://www.iana.org/time-zones/repository/releases/tzdata2016f.tar.gz`
+**Examples:**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`./tzupdater.sh /u01 http://www.iana.org/time-zones/repository/releases/tzdata2016f.tar.gz`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`./tzupdater.sh /u01 tzdata2016f.tar.gz -f`
 
 ### Time Zone Database Archive Downloader (tzdownloader.sh)
-**Usage:**
+**Usage:**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`./tzdownloader.sh <http link>`
 
-**Examples:**
+**Examples:**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`./tzdownloader.sh http://www.iana.org/time-zones/repository/releases/tzdata2016f.tar.gz`
 
 ### Note
